@@ -19,8 +19,6 @@ services:
       - DEFAULT_NAMESPACE=default
     volumes:
       - ./temporalio/dynamicconfig:/etc/temporal/config/dynamicconfig
-    ports:
-      - '7233:7233'
     healthcheck:
       test: ["CMD", "nc", "-z", "localhost", "7233"]
       interval: 5s
