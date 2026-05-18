@@ -43,6 +43,10 @@ All customization options (use with caution):
 | -------- | ---- | ------- |
 | `TEMPORALIO_DOCKER_IMAGE` | `--temporalio-docker-image` | `ddev/ddev-utilities:latest` |
 
+## Web UI
+
+The Temporal UI can be found on https://temporalio-ui.sitename.ddev.site/
+
 ## Credits
 
 **Contributed and maintained by [@chx](https://github.com/chx) with sponsorship from [Tag1 Consulting](https://tag1consulting.com/)**
