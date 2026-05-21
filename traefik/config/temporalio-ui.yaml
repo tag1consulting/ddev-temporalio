@@ -9,7 +9,7 @@ http:
       service: "NAME_REPLACE_THIS-temporalio-ui"
       ruleSyntax: v3
       tls: true
-      priority: 100
+      priority: 100000
   services:
     NAME_REPLACE_THIS-temporalio-ui:
       loadbalancer:
