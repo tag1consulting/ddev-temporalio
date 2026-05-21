@@ -19,6 +19,8 @@ services:
       - BIND_ON_IP=0.0.0.0
       - DYNAMIC_CONFIG_FILE_PATH=config/dynamicconfig/development-sql.yaml
       - DEFAULT_NAMESPACE=default
+      # This is needed for the namespace creating script.
+      - TEMPORAL_ADDRESS=temporalio-server:7233
     volumes:
       - ./temporalio/dynamicconfig:/etc/temporal/config/dynamicconfig
     healthcheck:
