@@ -1,4 +1,7 @@
 #!/bin/sh
+
+#ddev-generated
+
 set -eu
 
 NAMESPACE=${DEFAULT_NAMESPACE:-default}

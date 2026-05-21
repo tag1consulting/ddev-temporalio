@@ -1,4 +1,7 @@
 #!/bin/sh
+
+#ddev-generated
+
 # @@@SNIPSTART compose-mysql-setup
 set -eu
 

@@ -1,3 +1,5 @@
+#ddev-generated
+
 FROM temporalio/admin-tools AS admin-tools
 
 FROM temporalio/server
