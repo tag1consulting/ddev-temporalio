@@ -2,7 +2,7 @@
 
 http:
   routers:
-    temporalio-ui:
+    NAME_REPLACE_THIS-temporalio-ui:
       entrypoints:
         - http-443
       rule: Host(`HOST_REPLACE_THIS`)
