@@ -1,4 +1,5 @@
 #!/bin/sh
+## #ddev-generated
 set -e
 
 echo "[init] Running MySQL schema setup..."
