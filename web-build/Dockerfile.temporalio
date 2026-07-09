@@ -1,0 +1,3 @@
+#ddev-generated
+COPY --from=ghcr.io/roadrunner-server/roadrunner:2025.1.15 /usr/bin/rr /usr/local/bin/rr
+ADD rr-start.sh /usr/local/bin
