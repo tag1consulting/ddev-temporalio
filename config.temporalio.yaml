@@ -1,7 +1,6 @@
 #ddev-generated
 webimage_extra_packages: ['php${DDEV_PHP_VERSION}-grpc']
 additional_hostnames: [temporalio-ui.NAME_REPLACE_THIS]
-homeadditions: [rr-start.sh]
 web_extra_daemons:
 - name: "roadrunner"
   command: "/usr/local/bin/rr-start.sh"
