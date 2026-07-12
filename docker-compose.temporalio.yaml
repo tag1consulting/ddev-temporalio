@@ -33,13 +33,17 @@ services:
 
   temporalio-ui:
     container_name: ddev-${DDEV_SITENAME}-temporalio-ui
+    image: temporalio/ui
     depends_on:
       temporalio-server:
         condition: service_healthy
     environment:
       - TEMPORAL_ADDRESS=temporalio-server:7233
       - TEMPORAL_CORS_ORIGINS=http://localhost:3000
-    image: temporalio/ui
+      - VIRTUAL_HOST=$DDEV_HOSTNAME
+      - HTTPS_EXPOSE=30411:8080
+    expose:
+      - "8080"
     labels:
       com.ddev.site-name: ${DDEV_SITENAME}
       com.ddev.approot: ${DDEV_APPROOT}

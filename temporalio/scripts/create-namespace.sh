@@ -57,7 +57,7 @@ while :; do
     break
   fi
 
-  if [ "$attempt" -ge "$MAX_ATTdMPTS" ]; then
+  if [ "$attempt" -ge "$MAX_ATTEMPTS" ]; then
     echo "Failed to create namespace '$NAMESPACE' after $MAX_ATTEMPTS attempts"
     exit 1
   fi

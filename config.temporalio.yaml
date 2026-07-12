@@ -5,3 +5,24 @@ web_extra_daemons:
 - name: "roadrunner"
   command: "/usr/local/bin/rr-start.sh"
   directory: /var/www/html
+hooks:
+  pre-start:
+    - exec-host: |
+        mkdir -p .ddev/traefik/config
+        cat > .ddev/traefik/config/temporalio-ui.yaml <<-EOF
+        http:
+          routers:
+            ${DDEV_SITENAME}-temporalio-ui:
+              entrypoints:
+                - http-443
+              rule: Host(\`temporalio-ui.${DDEV_SITENAME}.${DDEV_TLD}\`)
+              service: "${DDEV_SITENAME}-temporalio-ui"
+              ruleSyntax: v3
+              tls: true
+              priority: 100
+          services:
+            ${DDEV_SITENAME}-temporalio-ui:
+              loadbalancer:
+                servers:
+                  - url: http://ddev-${DDEV_SITENAME}-temporalio-ui:8080
+        EOF
