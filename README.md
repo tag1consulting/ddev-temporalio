@@ -49,4 +49,4 @@ The Temporal UI can be found on https://temporalio-ui.sitename.ddev.site/
 
 ## Credits
 
-**Contributed and maintained by [@chx](https://github.com/chx) with sponsorship from [Tag1 Consulting](https://tag1consulting.com/)**
+**Contributed and maintained by [@knegyesi](https://github.com/knegyesi) with sponsorship from [Tag1 Consulting](https://tag1consulting.com/)**
