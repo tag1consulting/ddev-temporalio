@@ -1,7 +1,7 @@
 [![add-on registry](https://img.shields.io/badge/DDEV-Add--on_Registry-blue)](https://addons.ddev.com)
-[![tests](https://github.com/chx/ddev-temporalio/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/chx/ddev-temporalio/actions/workflows/tests.yml?query=branch%3Amain)
-[![last commit](https://img.shields.io/github/last-commit/chx/ddev-temporalio)](https://github.com/chx/ddev-temporalio/commits)
-[![release](https://img.shields.io/github/v/release/chx/ddev-temporalio)](https://github.com/chx/ddev-temporalio/releases/latest)
+[![tests](https://github.com/knegyesi/ddev-temporalio/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/knegyesi/ddev-temporalio/actions/workflows/tests.yml?query=branch%3Amain)
+[![last commit](https://img.shields.io/github/last-commit/knegyesi/ddev-temporalio)](https://github.com/knegyesi/ddev-temporalio/commits)
+[![release](https://img.shields.io/github/v/release/knegyesi/ddev-temporalio)](https://github.com/knegyesi/ddev-temporalio/releases/latest)
 
 # DDEV Temporal.io
 
@@ -12,7 +12,7 @@ This add-on integrates [Temporal.io](https://temporal.io) into your [DDEV](https
 ## Installation
 
 ```bash
-ddev add-on get chx/ddev-temporalio
+ddev add-on get knegyesi/ddev-temporalio
 ddev restart
 ```
 
@@ -31,7 +31,7 @@ To change the Docker image:
 
 ```bash
 ddev dotenv set .ddev/.env.temporalio --temporalio-docker-image="ddev/ddev-utilities:latest"
-ddev add-on get chx/ddev-temporalio
+ddev add-on get knegyesi/ddev-temporalio
 ddev restart
 ```
 
