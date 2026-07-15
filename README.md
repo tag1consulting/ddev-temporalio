@@ -1,7 +1,7 @@
 [![add-on registry](https://img.shields.io/badge/DDEV-Add--on_Registry-blue)](https://addons.ddev.com)
-[![tests](https://github.com/knegyesi/ddev-temporalio/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/knegyesi/ddev-temporalio/actions/workflows/tests.yml?query=branch%3Amain)
-[![last commit](https://img.shields.io/github/last-commit/knegyesi/ddev-temporalio)](https://github.com/knegyesi/ddev-temporalio/commits)
-[![release](https://img.shields.io/github/v/release/knegyesi/ddev-temporalio)](https://github.com/knegyesi/ddev-temporalio/releases/latest)
+[![tests](https://github.com/tag1consulting/ddev-temporalio/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/tag1consulting/ddev-temporalio/actions/workflows/tests.yml?query=branch%3Amain)
+[![last commit](https://img.shields.io/github/last-commit/tag1consulting/ddev-temporalio)](https://github.com/tag1consulting/ddev-temporalio/commits)
+[![release](https://img.shields.io/github/v/release/tag1consulting/ddev-temporalio)](https://github.com/tag1consulting/ddev-temporalio/releases/latest)
 
 # DDEV Temporal.io
 
@@ -12,7 +12,7 @@ This add-on integrates [Temporal.io](https://temporal.io) into your [DDEV](https
 ## Installation
 
 ```bash
-ddev add-on get knegyesi/ddev-temporalio
+ddev add-on get tag1consulting/ddev-temporalio
 ddev restart
 ```
 
@@ -31,7 +31,7 @@ To change the Docker image:
 
 ```bash
 ddev dotenv set .ddev/.env.temporalio --temporalio-docker-image="ddev/ddev-utilities:latest"
-ddev add-on get knegyesi/ddev-temporalio
+ddev add-on get tag1consulting/ddev-temporalio
 ddev restart
 ```
 
@@ -49,4 +49,4 @@ The Temporal UI can be found on https://temporalio-ui.sitename.ddev.site/
 
 ## Credits
 
-**Contributed and maintained by [@knegyesi](https://github.com/knegyesi) with sponsorship from [Tag1 Consulting](https://tag1consulting.com/)**
+**Contributed and maintained by [@tag1consulting](https://github.com/tag1consulting) with sponsorship from [Tag1 Consulting](https://tag1consulting.com/)**
