@@ -3,6 +3,7 @@ name: temporalio
 project_files:
   - docker-compose.temporalio.yaml
   - config.temporalio.yaml
+  - config.temporalio.user.yaml
   - web-build/rr-start.sh
   - web-build/Dockerfile.temporalio
   - temporalio/
