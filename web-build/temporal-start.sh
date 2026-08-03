@@ -2,6 +2,7 @@
 #ddev-generated
 #ddev-silent-no-warn
 
+/usr/local/bin/temporal server start-dev --ui-ip 0.0.0.0 &
 while true; do
     if [[ -f "./.rr.yaml" ]]; then
         install_path="."

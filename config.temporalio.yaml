@@ -2,9 +2,14 @@
 webimage_extra_packages: ['php${DDEV_PHP_VERSION}-grpc']
 additional_hostnames: [temporalio-ui.NAME_REPLACE_THIS]
 web_extra_daemons:
-- name: "roadrunner"
-  command: "/usr/local/bin/rr-start.sh"
-  directory: /var/www/html
+  - name: "roadrunner"
+    command: "/usr/local/bin/temporal-start.sh"
+    directory: /var/www/html
+web_extra_exposed_ports:
+  - name: temporalio-ui
+    container_port: 8233
+    http_port: 8234
+    https_port: 8233
 hooks:
   pre-start:
     - exec-host: |
@@ -24,5 +29,5 @@ hooks:
             ${DDEV_SITENAME}-temporalio-ui:
               loadbalancer:
                 servers:
-                  - url: http://ddev-${DDEV_SITENAME}-temporalio-ui:8080
+                  - url: http://ddev-${DDEV_SITENAME}-web:8233
         EOF

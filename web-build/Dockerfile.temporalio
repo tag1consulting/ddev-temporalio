@@ -1,3 +1,4 @@
 #ddev-generated
 COPY --from=TEMPORALIO_ROADRUNNER_IMAGE_REPLACE_THIS /usr/bin/rr /usr/local/bin/rr
-ADD rr-start.sh /usr/local/bin
+ADD temporal-start.sh /usr/local/bin
+RUN wget -O - "https://temporal.download/cli/archive/v1.8.2?platform=linux&arch=amd64" | tar -xz -C /usr/local/bin -f - temporal

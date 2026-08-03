@@ -4,11 +4,10 @@ project_files:
   - docker-compose.temporalio.yaml
   - config.temporalio.yaml
   - config.temporalio.user.yaml
-  - web-build/rr-start.sh
-  - web-build/Dockerfile.temporalio
-  - temporalio/
+  - web-build/
+  - temporal-post-install.sh
 post_install_actions:
-   - ./temporalio/install/post.sh
-   - rm -rf ./temporalio/install/
+  - ./temporal-post-install.sh
+  - rm ./temporal-post-install.sh
 
 ddev_version_constraint: '>= v1.24.10'
