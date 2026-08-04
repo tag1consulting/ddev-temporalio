@@ -31,5 +31,3 @@ hooks:
                 servers:
                   - url: http://ddev-${DDEV_SITENAME}-web:8233
         EOF
-  post-start:
-    - exec: drush ev '\Drupal::moduleHandler()->loadInclude("temporal", "install");temporal_install();'

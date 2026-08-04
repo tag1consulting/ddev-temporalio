@@ -2,7 +2,12 @@
 #ddev-generated
 #ddev-silent-no-warn
 
-/usr/local/bin/temporal server start-dev --ui-ip 0.0.0.0 &
+temporal_db_dir="/mnt/ddev-global-cache/temporalio"
+temporal_version="$(/usr/local/bin/temporal --version | awk '{print $3}')"
+mkdir -p "${temporal_db_dir}"
+
+/usr/local/bin/temporal server start-dev --ui-ip 0.0.0.0 \
+  --db-filename "${temporal_db_dir}/${DDEV_PROJECT}-${temporal_version}.db" &
 while true; do
     if [[ -f "./.rr.yaml" ]]; then
         install_path="."
